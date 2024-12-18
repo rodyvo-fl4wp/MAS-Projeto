@@ -1,0 +1,550 @@
+body{
+    background-color: #1B222A;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 12vh;
+    padding-bottom: 12vh;
+}
+
+a {
+    display: block; /* Ensures the link behaves as a block-level element */
+    text-decoration: none; /* Removes underline if present */
+    color:#FFFFFF;
+}
+
+div{
+    text-align: center;
+}
+
+.logo-container{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 6vh;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container img{
+    height:100%;
+}
+
+form{
+    width: 100%;
+}
+
+.fixed-bottom{
+    height: 5vh;
+    font-size: 3.5vh;
+    box-shadow: 0 0 0 0;
+    background-color: #1B222A;
+    color:#606872;
+    padding: 0.5vh;
+}
+
+.fixed-top{
+    height: 9vh;
+}
+
+.btn{
+    background-color: #2f3336;
+    color: white;
+}
+
+/* WELCOME PAGE */
+
+.login-container, .register-container{
+    width:100%;
+    border-radius: 30px;
+    border: 2px solid #F5F5F5;
+    height: 5vh;
+    margin-bottom: 1.5vh;
+    background-color: #158628;
+    color: aliceblue;
+}
+.login-container:hover{
+    background-color: #127222;
+    transition: background 0.3s;
+}
+
+.register-container{
+    background-color: #158628;
+}
+
+.register-container:hover{
+    background-color: #127222;
+    transition: background 0.3s;
+}
+
+/* REGISTER PAGE and LOGIN PAGE*/
+
+
+.input{
+    width:100%;
+    border-radius: 20vh;
+    border: 2px solid #158628;
+    height: 5vh;
+    margin-bottom: 1.5vh;
+    background-color: #F5F5F5;
+    color: #2C2C2C;
+    padding: 1vh;
+}
+
+#viewIcon{
+    position: absolute;
+    margin-top: 1.6vh;
+    margin-left: -4vh;
+    color: #2C2C2C;
+}
+
+.login-button{
+    border-radius: 20vh;
+    border: 2px solid #F5F5F5;
+    height: 5vh;
+    margin-bottom: 1.5vh;
+    background-color: #158628;
+    color: #F5F5F5;
+    padding: 1vh;
+}
+
+.register-button{
+    border-radius: 20vh;
+    border: 1px solid #F5F5F5;
+    height: 5vh;
+    margin-bottom: 1.5vh;
+    background-color: #158628;;
+    color: #F5F5F5;
+    padding: 1vh;
+}
+
+.register-button:hover{
+    background-color: #127222;
+    transition: background 0.3s;
+}
+
+.form-container{
+    text-align: center;
+    width: 100%;
+}
+
+.warning{
+    margin-top: -1.2vh;
+    margin-bottom: 1vh;
+}
+
+.pfp-selector{
+    text-align: center;
+    color:#F5F5F5;
+}
+
+#pfp-holder{
+    border-radius: 50%;
+    height:20vh;
+    aspect-ratio: 1/1;
+    margin-top: 6vh;
+    cursor: pointer;
+}
+
+
+
+/* HOME PAGE */
+.active{
+    color: #158628;
+}
+
+.shortcut{
+    background-color: #2f3336;
+    color: white;
+    border-radius: 0.8vh;
+    width: 45%;
+    aspect-ratio: 3.5/1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+.profile-pic{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url('https://i.pinimg.com/564x/23/54/f2/2354f2eb9d6f4a9f5617c5760d0e1da1.jpg');
+    background-size: cover;
+    box-shadow: 0 2px 5px black;
+}
+
+.check-profile{
+    height:2vh;
+    width: 2vh;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.brand{
+    height: 8vh;
+    aspect-ratio: 1/1;
+    background-image: url('./Images/UAtiva_logo.png');
+    background-size: cover;
+}
+
+nav{
+    background-color: #158628;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black; 
+}
+
+.mainMenu{
+    height: 80vh;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.gym-menu{
+    background: url('./Images/gym_banner.jpg');
+    height:20vh;
+    margin: 2vh;
+    border-radius: 2vh;
+    opacity: 0.5;
+    box-shadow: 0 5px 10px black;
+    text-shadow: 
+        1.5px 1.5px #8B0000, /* Bottom-right shadow */
+        -1.5px -1.5px #8B0000, /* Top-left shadow */
+        -1.5px 1.5px #8B0000, /* Bottom-left shadow */
+        1.5px -1.5px #8B0000; /* Top-right shadow */
+    font-size: 5rem; /* Example font size */
+}
+
+.nutrition-menu{
+    background-image: url('./Images/nutrition_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:20vh;
+    margin: 2vh;
+    border-radius: 2vh;
+    opacity: 0.6;
+    box-shadow: 0 5px 10px black;
+    text-shadow: 
+        1.5px 1.5px #8B0000, /* Bottom-right shadow */
+        -1.5px -1.5px #8B0000, /* Top-left shadow */
+        -1.5px 1.5px #8B0000, /* Bottom-left shadow */
+        1.5px -1.5px #8B0000; /* Top-right shadow */
+    font-size: 5rem; /* Example font size */
+}    
+
+.ua-menu{
+    background: url('./Images/ua_banner.jpg');
+    background-position: center top;
+    background-size: cover;
+    height:20vh;
+    margin: 2vh;
+    border-radius: 2vh;
+    opacity: 0.5;
+    box-shadow: 0 5px 10px black;
+    text-shadow: 
+        1.5px 1.5px #8B0000, /* Bottom-right shadow */
+        -1.5px -1.5px #8B0000, /* Top-left shadow */
+        -1.5px 1.5px #8B0000, /* Bottom-left shadow */
+        1.5px -1.5px #8B0000; /* Top-right shadow */
+    font-size: 5rem; /* Example font size */
+}
+
+.menu:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ;
+}
+
+.nutrition-menu span{
+    opacity: 1;
+}
+
+
+
+.plan-subscription {
+    color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-subscription span {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+}
+
+
+.plan-subscription:hover{
+    background-color: #E65A00;
+}
+
+
+/* PROFILE PAGE */
+.profile-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-container .profile-pic {
+    width: 15vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url('https://i.pinimg.com/564x/23/54/f2/2354f2eb9d6f4a9f5617c5760d0e1da1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* .row {
+    width: 80%; 
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 2vh;
+} */
+
+.profile-info {
+    width: 100%;
+    padding: 12px; 
+    border-radius: 8px;
+    font-size: 16px; 
+    color: white;
+    background-color: #42474b; 
+    text-align: center; 
+    margin-bottom: 2vh;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.profile-info:disabled {
+    background-color: #2f3336; 
+    color: #999;
+}
+
+.profile-info:hover:not(:disabled) {
+    border-color: #8b0000; /* Highlights input on hover */
+    box-shadow: 0 4px 6px rgba(139, 0, 0, 0.2); /* Slightly emphasizes on hover */
+}
+
+label {
+    color: #FFFFFF; 
+    font-size: 15px; 
+    font-weight: 500; 
+    font-family: 'Arial', sans-serif; 
+    margin-bottom: 8px; 
+    display: block; 
+}
+
+.edit-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #158628;
+    cursor: pointer;
+    margin-left: -2.3rem;
+    margin-top: 0.7rem;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+    color: #1ba732; /* Slightly brighter red on hover */
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #444;
+    width: 100%;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.menu-option .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 5px 0;
+}
+
+.menu-option .btn-primary {
+    background-color: #007bff; /* Azul padrão */
+}
+
+.menu-option .btn-primary:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+.menu-option .btn-danger {
+    background-color: #dc3545; /* Vermelho padrão */
+}
+
+.menu-option .btn-danger:hover {
+    background-color: #b52a37; /* Vermelho mais escuro */
+}
+
+
+/* TABLE CSS */
+
+.card{
+    background-color: #2f3336;
+    color: white;
+    padding: 2vh;
+    margin-bottom: 2vh;
+}
+
+.table-container {
+    margin-top: 2vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2f3336;
+    padding: 2vh 0 2vh 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2vh;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+th {
+    background-color: #202224;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+tr:nth-child(even) td{
+    background-color: #3d4042;
+    color: #ffffff;
+}
+
+tr:nth-child(odd) td{
+    background-color: #292b2c;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.check {
+    color: green !important;
+    font-weight: bold;
+}
+
+.not {
+    color: red !important;
+    font-weight: bold;
+}
+
+
+/* SUBSCRIPTION */
+
+
+.subscribe-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #45a049;
+}
+
+a.nav-link {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.selected-plans-container{
+    margin-top: 3vh;
+    padding: 2vh;
+
+}
+
+/* PLAN CHECK */ 
+
+.subscription-plan{
+    background-color: #2f3336;
+    border-radius: 2vw;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(1rem, 3vw, 3rem); 
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.gym-subscription-plan, .nutrition-subscription-plan{
+    background-color: #2f3336;
+    border-radius: 2vw;
+    color: white;
+    font-weight: 700;
+    font-size: 2vh; 
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.gym-subscription-plan div, .nutrition-subscription-plan div{
+    margin-bottom: 2vh;
+}
+
+
+.btn-checkout{
+    border-radius: 5px;
+    border: 1px solid #F5F5F5;
+    color: #F5F5F5;
+}
+
+.btn-checkout:hover{
+    border-radius: 5px;
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+

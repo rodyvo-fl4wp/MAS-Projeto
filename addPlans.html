@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+
+            var GymPlanTypes = {
+                'Basic': {
+                    'Price': 10,
+                    'AccessToGym': true,
+                    'AccessToClasses': false,
+                    'PersonalTrainerSessions': false,
+                    'LockerRoomAccess': true,
+                    'NutritionPlanIncluded': false,
+                    'MonthlyClassesIncluded': 0,
+                }, 
+                'Standard': {
+                    'Price': 15,
+                    'AccessToGym': true,
+                    'AccessToClasses': true,
+                    'PersonalTrainerSessions': false,
+                    'LockerRoomAccess': true,
+                    'NutritionPlanIncluded': false,
+                    'MonthlyClassesIncluded': 4,
+                }, 
+                'Unlimited': {
+                    'Price': 20,
+                    'AccessToGym': true,
+                    'AccessToClasses': true,
+                    'PersonalTrainerSessions': true,
+                    'LockerRoomAccess': true,
+                    'NutritionPlanIncluded': true,
+                    'MonthlyClassesIncluded': 'Unlimited',
+                }, 
+            }
+
+            var NutritionPlanTypes = {
+                'Basic': {
+                    'Price': 10,
+                    'CustomizedMealPlan': true,
+                    'MonthlyDietitianConsultations': 1,
+                    'SupplementAdvice': false,
+                    'PersonalizedNutritionalReports': false,
+                    'bmiWeightTracking': true,
+                }, 
+                'Balanced': {
+                    'Price': 15,
+                    'CustomizedMealPlan': true,
+                    'MonthlyDietitianConsultations': 2,
+                    'SupplementAdvice': true,
+                    'PersonalizedNutritionalReports': false,
+                    'bmiWeightTracking': true,
+                }, 
+                'Performance': {
+                    'Price': 20,
+                    'CustomizedMealPlan': true,
+                    'MonthlyDietitianConsultations': 4,
+                    'SupplementAdvice': true,
+                    'PersonalizedNutritionalReports': true,
+                    'bmiWeightTracking': true,
+                }, 
+            }
+
+            localStorage.setItem('GymPlans', JSON.stringify(GymPlanTypes))
+            localStorage.setItem('NutritionPlans', JSON.stringify(NutritionPlanTypes))
+
+        </script>
+    </head>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        
+        <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Define available check-ups
+    const availableCheckUps = [
+        {
+            Date: "2024-12-20",
+            Time: "10:00 AM",
+            Type: "General",
+            Location: "Clinic A",
+        },
+        {
+            Date: "2024-12-22",
+            Time: "2:00 PM",
+            Type: "Dietitian",
+            Location: "Clinic B",
+        },
+        {
+            Date: "2024-12-25",
+            Time: "9:00 AM",
+            Type: "Follow-Up",
+            Location: "Clinic C",
+        },
+        {
+            Date: "2024-12-27",
+            Time: "11:00 AM",
+            Type: "General",
+            Location: "Clinic D",
+        },
+        {
+            Date: "2024-12-30",
+            Time: "3:00 PM",
+            Type: "Dietitian",
+            Location: "Clinic E",
+        },
+    ];
+q
+    // Save the available check-ups to localStorage
+    localStorage.setItem('Available CheckUps', JSON.stringify(availableCheckUps));
+
+    console.log("Available check-ups have been added to localStorage.");
+});
+
+        </script>
+    </body>
+</html>
